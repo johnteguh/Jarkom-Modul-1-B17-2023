@@ -44,4 +44,8 @@ pada display filter masukan syntax tcp.dstport == 80 || udp.dstport == 80, maka 
 ## Soal 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
+Jawaban: ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
+#### Langkah untuk menemukan jawaban:
+Pada Display Filter, untuk menyelesaikan soal tersebut digunakan syntax di atas. Namun, pada source dan destination dengan IP tersebut, tidak ditemukan alamat yang sesuai.
+
 ## Soal 10
