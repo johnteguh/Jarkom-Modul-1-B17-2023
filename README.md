@@ -1,8 +1,43 @@
 # Jarkom-Modul-1-B17-2023
 
 ## Soal 1
+User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+
+a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
+
+b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+
+c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+### Solusi
+
+![gambar 1.1](Gambar/Nomor1.1.png)
+Pada persoalan dijelaskan bahwa user melakukan salah satu aktivitas yaitu menggungah suatu file sehingga pada info dari package yang kita cari akan mengandung STOR yang berarti menggungah sehingga pada file tersebut bisa dilihat bahwa package nomor 147 melakukan STOR GrabThePhisher.zip dan untuk mengetahui package yang merupakan respon dari aktivitas 147 dapat dilihat bahwa pada package nomor 149 melakukan response terhadap package nomor 147 yaitu pada info Opening BINARY node data connection for c75-GrabThePhiser.zip. Sehingga untuk menjawab pertanya package 147 dan package 149 dapat dibuka dan dilihat 
+
+![gambar 1.2](Gambar/Nomor1.2.png)
+Sehingga untuk jawaban : 
+- 1.a 258040667
+- 1.b 1044861039
+- 1.c 1044861039
+- 1.d 258040696
+
 ## Soal 2
+#### Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+![gambar 2.1](Gambar/Nomor2.1.png)
+Pertama kita lakukan filtering terlebih dahulu untuk mencari "Jaringan Komputer" dengan menggunakan ``frame contains "Jaringan Komputer" `` sehingga akan terlihat 1 package, lalu pada package tersebut kita lakukan `Follow - TCP Stream ` sehingga akan terlihat web server yang digunakan pada portal praktikum Jaringan Komputer
+
+![gambar 2.2](Gambar/Nomor2.2.png)
+Sehingga dapat dilihat bahwa Web Server yang digunakan adalah : `Gunicorn `
+
+### Jawaban : `gunicorn `
 ## Soal 3
+### Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
+ - Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+ - Protokol layer transport apa yang digunakan?
+
+
 ## Soal 4
 
 ## Soal 5
